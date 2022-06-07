@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fonts-->
+    <link 
+        rel="preconnect" 
+        href="https://fonts.googleapis.com"
+    >
+    <link 
+        rel="preconnect" 
+        href="https://fonts.gstatic.com" 
+        crossorigin
+    >
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+        rel="stylesheet"
+    >
+    <!--css link-->
+    <link 
+        rel="stylesheet" 
+        href="css/style.css"
+    >
+    <title>mcs</title>
+</head>
+<body>
+        <!--header start here-->
+        <header>
+            <div class="logo-search">
+                <!--logo-->
+                <a class="logo" href="index.html">MCS</a>
+                <!--search form-->
+                <form class="search-form" role="search" id="form" action="">
+                    <input class="search-input" type="search" id="query" name="q" placeholder="Введите запрос...">
+                    <button class="search-button">
+                    <svg class="search-svg" viewBox="0 0 1024 1024">
+                        <path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z">
+                        </path>
+                    </svg>
+                    </button>
+                </form><!--search form end-->
+            </div>
+            <!--header nav-->
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-item"><a href="">Учебник</a></li>
+                    <li class="header-item"><a href="">Блог</a></li>
+                    <li class="header-item"><a href="">Войти</a></li>
+                </ul>
+            </nav><!--header nav end-->
+        </header>
+        <!--header end-->
+
+        <!--main start here-->
+        <main>
+            <!-- lib-section start-->
+            <div class="lib-section">
+                <!-- sidenav start -->
+                <nav class="lib-nav" id="myDIV">
+                    <ol class="lib-nav-list">
+                        <a class="tier-1-item" href="">Все разделы</a>
+                        <li class="tier-1-item"><a href="">Из чего состоит компьютер</a>
+                            <ol>
+                                <li class="tier-2-item"><a href="">Материнская плата</a></li>
+                                <li class="tier-2-item"><a href="">Процессор</a></li>
+                                <li class="tier-2-item"><a href="">Оперативная память (ОЗУ)</a></li>
+                                <li class="tier-2-item"><a href="">Блок питания</a></li>
+                                <li class="tier-2-item"><a href="">Видеокарта</a></li>
+                                <li class="tier-2-item"><a href="">Жисткий диск (HDD)</a></li>
+                                <li class="tier-2-item"><a href="">Твердотельный накопитель (SSD)</a></li>
+                            </ol>
+
+                            <div class="button-nav-hide" onclick="myFunction()"><p>Скрыть</p></div>
+                        </li>
+                    </ul>
+                </nav><!-- sidenav end -->
+                <!--content start-->
+                <section class="content">
+                    <!-- hide nav button -->
+                    <div class="content-item">
+                        <h1>Из чего состоит компьютер</h1>
+                        <br>
+                        <div class="button-nav-hide" onclick="myFunction()"><p>Содержание</p></div>
+                        <br>
+                        <p>Компьютер в самом простом бытовом понимании это: <br><br>
+                            <ul>
+                                <li>Системный блок (само вычислительное устройство);</li>
+                                <li>Монитор (средство вывода информации);</li>
+                                <li>Устройства ввода информации (клавиатура и мышь);</li>
+                            </ul><br>   
+                        <p>В данном разделе мы подробно остановимся на том, что в себя включает системный блок, 
+                        и отдельно познакомимся с каждым из его основных комплектующих</p><br><br>
+
+                        <img class="content-item-img" src="img/test1.jpg" alt="pc" width="100%">
+                    </div>
+                </section><!--content end-->
+            </div><!-- lib-section end-->
+        </main>
+        <!--main end-->
+
+        <!--footer start here-->
+        <footer class="footer-bar">
+            <address>
+                <h4 class="footer-item">Find me on social media</h4>
+                <div class="links footer-item">
+                    <a href="https://vk.com/ykovlevv" target="_blank">
+                        <img src="img/vk_logo.svg" alt="Лого Вконтакте">
+                    </a>
+                    <a href="https://t.me/keshaaaaaaaaaaaaaaaaa" target="_blank">
+                        <img src="img/tg_logo.svg" alt="Лого Телеграмм">
+                    </a>
+                </div>
+                <h4 class="footer-item">Designed and developed by Innokenty Yakovlev</h4>
+                <a class="footer-item" href="mailto:innokenty.yakovlev@gmail.com">innokenty.yakovlev@gmail.com</a>
+            </address> 
+          </div>
+        </footer>
+        <script src="js/main.js"></script>
+        <!--footer end-->
+</body>
+</html>
